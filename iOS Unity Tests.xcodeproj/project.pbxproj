@@ -14,8 +14,6 @@
 		582E54812A4A71900080F4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582E54802A4A71900080F4EE /* Assets.xcassets */; };
 		582E54842A4A71900080F4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582E54822A4A71900080F4EE /* LaunchScreen.storyboard */; };
 		582E548F2A4A71900080F4EE /* iOS_Unity_TestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E548E2A4A71900080F4EE /* iOS_Unity_TestsTests.swift */; };
-		582E54992A4A71900080F4EE /* iOS_Unity_TestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E54982A4A71900080F4EE /* iOS_Unity_TestsUITests.swift */; };
-		582E549B2A4A71900080F4EE /* iOS_Unity_TestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E549A2A4A71900080F4EE /* iOS_Unity_TestsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 		582E548A2A4A71900080F4EE /* iOS Unity TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Unity TestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		582E548E2A4A71900080F4EE /* iOS_Unity_TestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Unity_TestsTests.swift; sourceTree = "<group>"; };
 		582E54942A4A71900080F4EE /* iOS Unity TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Unity TestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		582E54982A4A71900080F4EE /* iOS_Unity_TestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Unity_TestsUITests.swift; sourceTree = "<group>"; };
-		582E549A2A4A71900080F4EE /* iOS_Unity_TestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Unity_TestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +77,6 @@
 			children = (
 				582E54762A4A718F0080F4EE /* iOS Unity Tests */,
 				582E548D2A4A71900080F4EE /* iOS Unity TestsTests */,
-				582E54972A4A71900080F4EE /* iOS Unity TestsUITests */,
 				582E54752A4A718F0080F4EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,15 +111,6 @@
 				582E548E2A4A71900080F4EE /* iOS_Unity_TestsTests.swift */,
 			);
 			path = "iOS Unity TestsTests";
-			sourceTree = "<group>";
-		};
-		582E54972A4A71900080F4EE /* iOS Unity TestsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				582E54982A4A71900080F4EE /* iOS_Unity_TestsUITests.swift */,
-				582E549A2A4A71900080F4EE /* iOS_Unity_TestsUITestsLaunchTests.swift */,
-			);
-			path = "iOS Unity TestsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582E549B2A4A71900080F4EE /* iOS_Unity_TestsUITestsLaunchTests.swift in Sources */,
-				582E54992A4A71900080F4EE /* iOS_Unity_TestsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
