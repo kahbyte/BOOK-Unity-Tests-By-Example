@@ -1,36 +1,32 @@
-//
-//  iOS_Unity_TestsTests.swift
-//  iOS Unity TestsTests
-//
-//  Created by Kaue Sousa on 26/06/23.
-//
-
 import XCTest
 @testable import iOS_Unity_Tests
 
 final class iOS_Unity_TestsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_assertTrue() {
+        let success = false
+        XCTAssertTrue(success)
+    }
+    
+    func test_assertNil() {
+        let optionalValue: Int? = 123
+        XCTAssertNil(optionalValue)
+    }
+    
+    struct SimpleStruct: CustomStringConvertible {
+        var description: String { "(\(x), \(y))" }
+        
+        let x: Int
+        let y: Int
+    }
+    
+    func test_assertNil_withSimpleStruct() {
+        let optionalValue: SimpleStruct? = SimpleStruct(x: 1, y: 2)
+        XCTAssertNil(optionalValue)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func test_assertEqual() {
+        let actual = "actual"
+        XCTAssertEqual(actual, "expected")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }
